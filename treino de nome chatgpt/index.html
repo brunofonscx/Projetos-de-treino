@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Cuca Abeludo</h1>
+        <label for="inome">Digite seu nome abaixo por favor:</label>
+        <input type="text" name="nome" id="inome">
+        <button id="enviar" onclick="clicar()">Enviar</button>
+        <div id="resultado">... </div>
+    </main>
+
+    <script>
+        function clicar() {
+            const inputNome = document.getElementById('inome')
+            const nome = inputNome.value
+            const resultado = document.getElementById('resultado')
+            if (nome.length < 3){
+            resultado.innerHTML = "Nome invalido!"
+            } else {
+                resultado.innerHTML = `<p>O seu nome e ${nome}!<br> E ele tem
+                ${nome.length} letras.</p>`
+                
+            }
+           
+        }
+        
+    </script>
+</body>
+</html>

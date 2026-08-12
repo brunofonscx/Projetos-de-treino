@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+body {
+    padding:0;
+    margin:0;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #011142;
+
+}
+main {
+    background-color: #023BE6;
+    color:#fff;
+    height: 300px;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius:10px;
+}
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+button {
+    display: block;
+    margin: 0 auto;
+    margin: top 30px;
+    height:100px;
+    width: 200px;
+    font-size:1.4em;
+    border-radius:10px;
+
+}

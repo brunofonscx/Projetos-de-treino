@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+<body>
+     <header>
+        <h1>Login</h1>
+     </header>
+     <main>
+        <section>
+            <div id="input-user">
+                <label for="iuser">Usuario</label>
+                <input type="text" name="user" id="iuser">
+            </div>
+            <div id="input-senha">
+                <label for="isenha">
+                    Senha
+                </label>
+                <input type="text" name="Senha" id="isenha">
+                
+            </div>
+            <div id="submit"><input type="button" value="Enviar" onclick="Enviar()"></div>
+            <div id="res"></div>
+            
+
+        </section>
+     </main>
+     <script>
+        function Enviar() {
+            let itu = document.getElementById('iuser')
+            let its = document.getElementById('isenha')
+            let res = document.getElementById('res')
+            let senha = its.value
+            let user = itu.value
+            if (senha === user ) {
+                res.innerHTML = `<p>[ERRO]</p>`
+            } else {
+                res.innerHTML = `<p>Login efetuado!</p>`
+            }
+        }
+     </script>
+</body>
+</html>
